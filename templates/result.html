@@ -1,0 +1,33 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction: {{ prediction }}</h1>
+
+    <p>
+    The model predicted that this sample is likely <strong>{{ prediction }}</strong>.
+    This result is based on features derived from a digitized biopsy and evaluated
+    using a logistic regression classifier trained on real-world breast cancer data.
+    </p>
+
+    <!-- Back to form button -->
+    <a href="/">Back to Form</a>
+
+    <!-- Dashboard button -->
+    &nbsp;|&nbsp;
+    <a href="/dashboard">View Dashboard</a>
+
+    <br><br>
+
+    <p>
+        Dataset Source:
+        <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#breast-cancer-dataset" target="_blank">
+            Breast Cancer Wisconsin Diagnostic Dataset (via scikit-learn)
+        </a>
+    </p>
+
+</body>
+</html>

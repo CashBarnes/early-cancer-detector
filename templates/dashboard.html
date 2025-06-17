@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Dashboard</title>
+</head>
+<body>
+    <h1>Prediction Dashboard</h1>
+    <p>
+    This dashboard displays the distribution of predictions made by the ML model.
+    The chart shows the percentage of inputs predicted to be benign or malignant.
+    These predictions are logged every time a user submits a form.
+    </p>
+
+    <p><strong>Total Predictions:</strong> {{ total }}</p>
+
+    <p><strong>Benign:</strong> {{ benign }}</p>
+
+    <p><strong>Malignant:</strong> {{ malignant }}</p>
+
+    <img src="/chart" alt="Prediction Pie Chart">
+
+    <br><br>
+
+    <a href="/">Back to Form</a>
+
+    <br><br>
+
+    <p>
+        Dataset Source:
+        <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#breast-cancer-dataset" target="_blank">
+            Breast Cancer Wisconsin Diagnostic Dataset (via scikit-learn)
+        </a>
+    </p>
+</body>
+</html>

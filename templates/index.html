@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Detector</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Breast Cancer Prediction Form</h1>
+
+    <p>
+    This form uses data derived from the <strong>Breast Cancer Wisconsin Diagnostic Dataset</strong>.
+    Each feature represents a measurement from a digitized image of a breast mass biopsy.
+    After you submit the form, a machine learning model will predict whether the sample
+    is likely <strong>benign</strong> or <strong>malignant</strong>.
+    </p>
+
+    <div class="top-buttons">
+        <form action="/dashboard" method="GET">
+            <button type="submit">View Dashboard</button>
+        </form>
+    </div>
+
+    <form action="/predict" method="POST">
+        <div class="form-grid">
+            {% for name in feature_names %}
+                <div class="form-group">
+                    <label>{{ name }}</label>
+                    <input type="text" name="{{ name }}" value="{{ sample[name] | round(4) }}" required>
+                </div>
+            {% endfor %}
+        </div>
+        <input class="submit-button" type="submit" value="Predict">
+    </form>
+
+    <br><br>
+
+    <p>
+        Dataset Source:
+        <a href="https://scikit-learn.org/stable/datasets/toy_dataset.html#breast-cancer-dataset" target="_blank">
+            Breast Cancer Wisconsin Diagnostic Dataset (via scikit-learn)
+        </a>
+    </p>
+</body>
+</html>
