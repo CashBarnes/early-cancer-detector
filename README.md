@@ -1,6 +1,9 @@
 # Early Cancer Detector
 
-This is a full-stack machine learning application built as a demo for a data-focused role at GRAIL. It demonstrates the use of logistic regression to classify breast cancer diagnoses using features derived from biopsy images. The project includes model training, a web interface, a logging and monitoring system, and cloud deployment.
+This project demonstrates a full-stack machine learning application built to simulate a breast
+cancer diagnostic tool using open medical data. It includes a trained classification model, web
+interface, logging, monitoring, and cloud deployment, making it suitable for portfolios in data
+engineering, machine learning, and applied AI.
 
 ## Overview
 
@@ -77,7 +80,3 @@ You can optionally use the included `render.yaml` file for automatic configurati
 
 - Breast Cancer Wisconsin Diagnostic Dataset  
   [scikit-learn documentation](https://scikit-learn.org/stable/datasets/toy_dataset.html#breast-cancer-dataset)
-
-## Acknowledgments
-
-This project is inspired by GRAIL's mission to detect cancer early and demonstrates applied machine learning using open biomedical data.
