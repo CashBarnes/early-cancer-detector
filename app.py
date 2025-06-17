@@ -4,9 +4,6 @@ import csv
 import datetime
 import joblib
 import os
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import io
@@ -83,6 +80,9 @@ def dashboard():
 
 @app.route('/chart')
 def chart():
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
     try:
         log_file = 'logs/predictions_log.csv'
         if not os.path.exists(log_file):
