@@ -80,3 +80,8 @@ You can optionally use the included `render.yaml` file for automatic configurati
 
 - Breast Cancer Wisconsin Diagnostic Dataset  
   [scikit-learn documentation](https://scikit-learn.org/stable/datasets/toy_dataset.html#breast-cancer-dataset)
+
+## Disclaimer
+
+This application is for educational and demonstration purposes only. It is not intended for medical use or diagnosis. The model is trained on open-source data and is not approved for clinical decision-making. Do not use this tool to guide real-world medical care.
+
