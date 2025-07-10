@@ -2,8 +2,7 @@
 
 This project demonstrates a full-stack machine learning application built to simulate a breast
 cancer diagnostic tool using open medical data. It includes a trained classification model, web
-interface, logging, monitoring, and cloud deployment, making it suitable for portfolios in data
-engineering, machine learning, and applied AI.
+interface, logging, monitoring, and cloud deployment.
 
 ## Overview
 
